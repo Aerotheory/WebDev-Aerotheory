@@ -1,27 +1,39 @@
 ---
 import Service from "../cards/Service.astro";
+import ServiceOffer from "../cards/ServiceOffer.astro";
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
-import Title from "../shared/Title.astro";
+// import Paragraph from "../shared/Paragraph.astro";
+// import Title from "../shared/Title.astro";
 ---
 
-<section id="services">
+<section id="services" class="pt-20 md:pt-0 lg:pt-0">
   <Container className="space-y-10 md:sapce-y-12">
-    <div class="text-center max-w-3xl mx-auto space-y-4">
-      <Title>Services We Offer</Title>
-      <Paragraph>
-        <span> Creating exceptional web experiences for your users</span><br />
-        <span>
-          Maintaining and improving your existing suite of Web Applications
-        </span><br />
-        <span>
-          Taking ownership of projects and driving them to successful completion
-        </span><br />
-        <span
-          >Managing and maintaining eCommerce and CMS (Content Mangment Systems)</span
-        ><br />
-      </Paragraph>
-    </div>
+    <ServiceOffer
+      title="Services We Offer"
+      description1="Creating exceptional web experiences for your users"
+      description2="Maintaining and improving your existing suite of Web Applications"
+      description3="Taking ownership of projects and driving them to successful completion"
+      description4="Managing and maintaining eCommerce and CMS (Content Mangment Systems)"
+    >
+      <!-- <div class="text-center max-w-3xl mx-auto space-y-4 bg-slate-900">
+        <Title>Services We Offer</Title>
+        <Paragraph>
+          <span> Creating exceptional web experiences for your users</span><br
+          />
+          <span>
+            Maintaining and improving your existing suite of Web Applications
+          </span><br />
+          <span>
+            Taking ownership of projects and driving them to successful
+            completion
+          </span><br />
+          <span
+            >Managing and maintaining eCommerce and CMS (Content Mangment
+            Systems)</span
+          ><br />
+        </Paragraph>
+      </div> -->
+    </ServiceOffer>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       <Service
         title="Project management"
